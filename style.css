@@ -1,0 +1,35 @@
+#image-display {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+}
+
+label {
+  font-size: 18px;
+}
+
+#record-button,
+#stop-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#stop-button {
+  background-color: #f44336;
+}
+
+#stop-button[disabled] {
+  background-color: #ccc;
+  color: #777;
+  cursor: not-allowed;
+}
+
+#recorded-audio {
+  display: block;
+  width: 100%;
+}

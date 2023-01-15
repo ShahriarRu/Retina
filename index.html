@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Audio Recorder and Image Showing</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <label for="image-input">Select Image:</label>
+      <input
+        type="file"
+        id="image-input"
+        accept="image/*"
+        onchange="updateImage()"
+      />
+      <img id="image-display" src="" alt="Selected Image" />
+    </div>
+    <div>
+      <button id="record-button" onclick="startRecording()">
+        Start Recording
+      </button>
+      <button id="stop-button" onclick="stopRecording()" disabled>
+        Stop Recording
+      </button>
+      <audio id="recorded-audio" autoplay></audio>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
